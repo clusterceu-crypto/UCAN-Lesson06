@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123f5b">
+  <title>Заняття 6 — Управління водними ресурсами</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#lesson-content">Перейти до змісту</a>
+
+  <header class="site-header" aria-label="Навігація заняття">
+    <div class="header-inner">
+      <div class="brand-row">
+        <span class="brand">UCAN</span>
+        <a class="previous-lesson" href="https://clusterceu-crypto.github.io/UCAN-Lesson05/" aria-label="Попереднє заняття: Заняття 5">← Попереднє заняття</a>
+      </div>
+      <div class="header-context">
+        <span class="lesson-label">Заняття 6</span>
+        <span id="header-route-label" class="header-route-label">Вода як управлінське питання міста</span>
+      </div>
+      <button id="reset-lesson" class="button button-quiet" type="button">Почати спочатку</button>
+    </div>
+    <div class="progress-wrap" aria-label="Прогрес заняття">
+      <div class="progress-copy">
+        <span id="progress-page">Сторінка 1 з 10</span>
+        <span id="progress-percent">10%</span>
+      </div>
+      <div class="progress-track" role="progressbar" aria-label="Прогрес заняття" aria-valuemin="0" aria-valuemax="100" aria-valuenow="10">
+        <span id="progress-bar" class="progress-bar"></span>
+      </div>
+    </div>
+    <nav class="section-nav" aria-label="Розділи заняття">
+      <div id="section-nav-list" class="section-nav-list"></div>
+    </nav>
+  </header>
+
+  <main id="lesson-content" class="lesson-shell" tabindex="-1">
+    <section class="route is-active" data-route="R01" data-component="L06-HF01" aria-labelledby="r01-title">
+      <p class="eyebrow">Модуль 2 — Природоорієнтовані рішення для стійкості міст</p>
+      <h1 id="r01-title" tabindex="-1">Вода як управлінське питання міста</h1>
+      <p class="lesson-theme">Управління водними ресурсами: від дренажних систем до «водосвідомих» міст</p>
+
+      <div class="orientation-stack lx-orientation">
+        <div class="content-block orientation-intro">
+            <h2><span class="semantic-marker" aria-hidden="true">🎯</span> Навіщо Вам це заняття</h2>
+          <p>Сильна злива може за кілька годин створити проблему там, де місто роками працювало без серйозних збоїв.</p>
+          <p>Водночас у сухі періоди громада може стикатися з іншою проблемою — нестачею води.</p>
+          <p>Тому вода — це не лише питання труб, колекторів чи інших споруд. Це питання стійкості міської системи та якості управлінських рішень.</p>
+          <p>У цьому занятті ми не будемо проєктувати інженерні рішення.</p>
+          <p>Ми почнемо з першого управлінського кроку: побачити водний ризик, правильно його сформулювати та визначити, що потрібно зробити далі.</p>
+        </div>
+        <div class="content-block outcomes-block outcomes lx-outcomes">
+          <h2>Після цього заняття Ви зможете:</h2>
+          <ul>
+            <li>пояснити, чому водна безпека є управлінським питанням громади;</li>
+            <li>відрізнити підхід, зосереджений лише на дренажі, від ширшого водосвідомого підходу;</li>
+            <li>розпізнати ризик надлишку води, дефіциту води або їх поєднання;</li>
+            <li>визначити одне водне питання своєї громади та оформити його у початкову карту з першим управлінським кроком.</li>
+          </ul>
+        </div>
+        <div class="content-block artifact-card portfolio-preview lx-portfolio-preview">
+          <h2>Ваш практичний результат</h2>
+          <p>Наприкінці заняття Ви створите:</p>
+          <p class="strong-line">Карту водного ризику або водного управлінського питання.</p>
+          <p>Вона стане частиною Вашого Портфеля мера.</p>
+        </div>
+        <aside class="callout key-thought lx-key-thought" aria-labelledby="r01-key">
+            <h2 id="r01-key"><span class="semantic-marker" aria-hidden="true">💡</span> Головна думка</h2>
+          <p>Водосвідоме місто починає не з готового технічного рішення, а з розуміння свого водного ризику і першого обґрунтованого управлінського кроку.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="route" data-route="R02" data-component="L06-HF02" aria-labelledby="r02-title" hidden>
+      <h1 id="r02-title" tabindex="-1">Коли води забагато — і коли її бракує</h1>
+      <p>У міста можуть бути дві на перший погляд протилежні проблеми.</p>
+      <div class="lx-mental-model lx-dual-risk" aria-label="Дві сторони водної безпеки">
+        <div class="risk-node risk-node-excess">
+          <h2>Надлишок води / затоплення</h2>
+          <p>Після сильних опадів вода може накопичуватися на вулицях, перевантажувати міські системи та створювати ризик затоплення.</p>
+        </div>
+        <div class="risk-connector" aria-hidden="true">←</div>
+        <div class="risk-node risk-node-center">
+          <h2>Водна безпека</h2>
+        </div>
+        <div class="risk-connector" aria-hidden="true">→</div>
+        <div class="risk-node risk-node-deficit">
+          <h2>Дефіцит води</h2>
+          <p>В інший період громада може відчувати нестачу води або ставати більш вразливою під час тривалих сухих періодів.</p>
+        </div>
+      </div>
+      <p>Обидві ситуації стосуються водної безпеки.</p>
+      <div class="content-block">
+        <p>Для управлінської команди важливо не починати одразу з питання:</p>
+        <blockquote>«Що побудувати?»</blockquote>
+        <p>Спочатку варто відповісти на інші питання:</p>
+        <ul>
+          <li>Де виникає водний ризик?</li>
+          <li>Як він проявляється?</li>
+          <li>Чому він потребує управлінської уваги?</li>
+        </ul>
+        <p>Це допомагає відділити проблему від передчасно обраного рішення.</p>
+      </div>
+      <aside class="callout" aria-labelledby="r02-mayor">
+        <h2 id="r02-mayor">Для міського голови та управлінської команди</h2>
+        <p>Водний ризик може впливати на міські послуги, інфраструктуру, громадські простори та повсякденне життя мешканців.</p>
+        <p>Тому його варто розглядати не як ізольований технічний збій, а як управлінське питання міської стійкості.</p>
+      </aside>
+    </section>
+
+    <section class="route" data-route="R03" data-component="L06-HF03" aria-labelledby="r03-title" hidden>
+      <h1 id="r03-title" tabindex="-1">Від дренажу до водосвідомого міста</h1>
+      <div class="concept-expansion">
+        <p>Дренаж виконує важливу функцію: допомагає відводити воду з території.</p>
+        <p>Але підхід, зосереджений лише на дренажі, ставить переважно одне питання:</p>
+        <p class="question-line">Як швидше відвести воду?</p>
+        <p>Водосвідомий підхід ставить ширше питання:</p>
+        <p class="question-line">Як управляти водним ризиком у міській системі?</p>
+      </div>
+      <figure class="approved-visual lx-mental-model lx-approved-visual" data-asset-src="assets/L06-A01_Drainage_to_Water_Conscious_City_v1.0.svg" role="img" aria-label="Схема показує, що дренаж залишається частиною ширшого водосвідомого підходу, який розглядає водний ризик у контексті всієї міської системи.">
+        <svg class="a01-desktop" viewBox="0 0 1200 800" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet">
+          <rect x="0" y="0" width="1200" height="800" fill="#FFFFFF"/>
+          <text x="60" y="78" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#1F497D" text-anchor="start"><tspan x="60" dy="0">Від дренажу до водосвідомого міста</tspan></text>
+          <rect x="70" y="170" width="360" height="270" rx="22" fill="#FFFFFF" stroke="#1F497D" stroke-width="3"/>
+          <rect x="73" y="192" width="10" height="226" rx="5" fill="#1F497D"/>
+          <text x="108" y="230" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#1F497D" text-anchor="start"><tspan x="108" dy="0">Підхід, зосереджений</tspan><tspan x="108" dy="37.5">лише на дренажі</tspan></text>
+          <text x="108" y="338" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#1F497D" text-anchor="start"><tspan x="108" dy="0">Як швидше</tspan><tspan x="108" dy="30">відвести воду?</tspan></text>
+          <line x1="455" y1="305" x2="505" y2="305" stroke="#4BACC6" stroke-width="5" stroke-linecap="round"/>
+          <path d="M 505 305 L 486 292 L 486 318 Z" fill="#4BACC6"/>
+          <rect x="540" y="145" width="600" height="340" rx="26" fill="#FFFFFF" stroke="#76923C" stroke-width="4" stroke-linejoin="round"/>
+          <text x="585" y="220" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#1F497D" text-anchor="start"><tspan x="585" dy="0">Водосвідомий підхід</tspan></text>
+          <text x="585" y="285" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#1F497D" text-anchor="start"><tspan x="585" dy="0">Як управляти водним ризиком</tspan><tspan x="585" dy="30">у міській системі?</tspan></text>
+          <rect x="625" y="350" width="430" height="90" rx="18" fill="#D8D8D8" stroke="#1F497D" stroke-width="2"/>
+          <text x="840" y="384" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#1F497D" text-anchor="middle"><tspan x="840" dy="0">Підхід, зосереджений лише</tspan><tspan x="840" dy="26.25">на дренажі</tspan></text>
+          <line x1="70" y1="555" x2="1140" y2="555" stroke="#4BACC6" stroke-width="4" stroke-linecap="round"/>
+          <text x="70" y="610" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="#1F497D" text-anchor="start"><tspan x="70" dy="0">Дренаж — це частина системи. Водосвідомий підхід — це спосіб</tspan><tspan x="70" dy="27.5">управляти водним ризиком у ширшому міському контексті.</tspan></text>
+        </svg>
+        <svg class="a01-mobile" viewBox="0 0 720 1080" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet">
+          <rect x="0" y="0" width="720" height="1080" fill="#FFFFFF"/>
+          <text x="50" y="68" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#1F497D" text-anchor="start"><tspan x="50" dy="0">Від дренажу до</tspan><tspan x="50" dy="43.7">водосвідомого міста</tspan></text>
+          <rect x="50" y="175" width="620" height="235" rx="24" fill="#FFFFFF" stroke="#1F497D" stroke-width="3"/>
+          <rect x="53" y="199" width="10" height="187" rx="5" fill="#1F497D"/>
+          <text x="90" y="240" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#1F497D" text-anchor="start"><tspan x="90" dy="0">Підхід, зосереджений</tspan><tspan x="90" dy="36.25">лише на дренажі</tspan></text>
+          <text x="90" y="345" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#1F497D" text-anchor="start"><tspan x="90" dy="0">Як швидше відвести воду?</tspan></text>
+          <line x1="360" y1="430" x2="360" y2="468" stroke="#4BACC6" stroke-width="5" stroke-linecap="round"/>
+          <path d="M 360 478 L 345 456 L 375 456 Z" fill="#4BACC6"/>
+          <rect x="50" y="505" width="620" height="350" rx="26" fill="#FFFFFF" stroke="#76923C" stroke-width="4" stroke-linejoin="round"/>
+          <text x="90" y="575" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#1F497D" text-anchor="start"><tspan x="90" dy="0">Водосвідомий підхід</tspan></text>
+          <text x="90" y="635" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#1F497D" text-anchor="start"><tspan x="90" dy="0">Як управляти водним ризиком</tspan><tspan x="90" dy="30">у міській системі?</tspan></text>
+          <rect x="120" y="710" width="480" height="95" rx="18" fill="#D8D8D8" stroke="#1F497D" stroke-width="2"/>
+          <text x="360" y="748" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#1F497D" text-anchor="middle"><tspan x="360" dy="0">Підхід, зосереджений лише</tspan><tspan x="360" dy="27.5">на дренажі</tspan></text>
+          <line x1="50" y1="900" x2="670" y2="900" stroke="#4BACC6" stroke-width="4" stroke-linecap="round"/>
+          <text x="50" y="950" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="#1F497D" text-anchor="start"><tspan x="50" dy="0">Дренаж — це частина системи.</tspan><tspan x="50" dy="28.6">Водосвідомий підхід — це спосіб управляти</tspan><tspan x="50" dy="28.6">водним ризиком у ширшому міському контексті.</tspan></text>
+        </svg>
+      </figure>
+      <div class="concept-expansion">
+        <p>Це не означає відмовитися від дренажу.</p>
+        <p>Дренаж залишається частиною міської інфраструктури.</p>
+        <p>Змінюється масштаб управлінського погляду.</p>
+        <p>Місто дивиться не тільки на систему відведення, а й на:</p>
+        <ul>
+          <li>місце, де виникає ризик;</li>
+          <li>характер його прояву;</li>
+          <li>зв’язок із міським плануванням;</li>
+          <li>можливості запобігти або зменшити проблему;</li>
+          <li>перший крок, який має зробити управлінська команда.</li>
+        </ul>
+      </div>
+      <aside class="callout lx-key-thought" aria-labelledby="r03-key">
+        <h2 id="r03-key">Ключова відмінність</h2>
+        <p>Дренаж — це частина системи.</p>
+        <p>Водосвідомий підхід — це спосіб управляти водним ризиком у ширшому міському контексті.</p>
+      </aside>
+    </section>
+
+    <section class="route" data-route="R04" data-component="L06-HF04" aria-labelledby="r04-title" hidden>
+      <h1 id="r04-title" tabindex="-1">Як мислить «місто-губка»</h1>
+      <p>Концепція «міста-губки» змінює спосіб мислення про дощову воду.</p>
+      <p>Місто розглядає воду не лише як те, що потрібно якомога швидше відвести.</p>
+      <p>Воно також шукає, де воду можна безпечніше затримати, тимчасово накопичити або спрямувати, щоб зменшити водний ризик.</p>
+      <ol class="lx-process-model" aria-label="Управлінська логіка міста-губки">
+        <li><span>Дощова вода</span></li>
+        <li><span>затримати</span></li>
+        <li><span>тимчасово накопичити або спрямувати</span></li>
+        <li><span>зменшити водний ризик</span></li>
+      </ol>
+      <div class="management-boundary">
+        <div class="lx-boundary-note">
+          <p>Важливо: у цьому занятті нас цікавить управлінський принцип, а не технічний проєкт.</p>
+        </div>
+        <div class="lx-boundary-note is-quiet">
+          <p>Ви не будете:</p>
+          <ul>
+            <li>розраховувати пропускну здатність мереж;</li>
+            <li>визначати розміри споруд;</li>
+            <li>проєктувати дренаж;</li>
+            <li>обирати готову інженерну конструкцію.</li>
+          </ul>
+        </div>
+        <div class="lx-management-task">
+          <p>Ваше завдання інше:</p>
+          <p>побачити конкретний ризик і визначити перший управлінський крок.</p>
+        </div>
+      </div>
+      <aside class="callout lx-key-thought" aria-labelledby="r04-team">
+        <h2 id="r04-team">Для управлінської команди</h2>
+        <p>Не починайте з назви рішення.</p>
+        <p>Почніть із добре сформульованої проблеми.</p>
+        <p>Це зменшує ризик витратити час і ресурси на рішення, яке не відповідає реальній ситуації громади.</p>
+      </aside>
+    </section>
+
+    <section class="route" data-route="R05" data-component="L06-HF05" aria-labelledby="r05-title" hidden>
+          <h1 id="r05-title" tabindex="-1"><span class="semantic-marker" aria-hidden="true">🏙️</span> Як інші міста працюють із водним ризиком</h1>
+      <p>Міжнародні приклади не дають готового рецепта для Вашої громади.</p>
+      <p>Вони допомагають побачити різні принципи управління водним ризиком.</p>
+      <div class="evidence-grid lx-case-grid">
+        <article class="evidence-card evidence-primary lx-case lx-case-primary">
+          <h2>Copenhagen Cloudburst Management Plan (план управління ризиками сильних злив)</h2>
+          <h3 class="semantic-label">Контекст / ризик</h3>
+          <p>Копенгаген працює з ризиком сильних злив на рівні міста через Copenhagen Cloudburst Management Plan (план управління ризиками сильних злив).</p>
+          <h3 class="semantic-label">Що зробило місто / що показує приклад</h3>
+          <p>Для нас важливий управлінський принцип цього прикладу:</p>
+          <p>інтенсивні опади розглядаються не лише як локальна аварійна проблема, а як питання міського планування і системного управління водою.</p>
+          <p>Тобто місто спочатку формує розуміння ризику та його просторового прояву, а потім переходить до конкретних рішень.</p>
+          <h3 class="semantic-label">Управлінський урок</h3>
+          <p>Для Вашої громади це не означає копіювати план Копенгагена.</p>
+          <p>Корисне запитання інше:</p>
+          <p>Чи бачимо ми водний ризик як окрему проблему однієї вулиці — чи як частину більшої міської системи?</p>
+                <a class="button button-external resource-link" data-resource="RES02" href="https://planer.kk.dk/spildevandsplan-2018/maalsaetninger/plangrundlag/skybrudsplan/" target="_blank" rel="noopener noreferrer">City of Copenhagen: відкрити план ↗</a>
+        </article>
+        <article class="evidence-card lx-case lx-case-supporting">
+          <h2>Роттердам: водні площі та тимчасове накопичення води</h2>
+          <h3 class="semantic-label">Контекст / ризик</h3>
+          <p>Матеріали Роттердама показують інший принцип.</p>
+          <h3 class="semantic-label">Що зробило місто / що показує приклад</h3>
+          <p>Так звані водні площі та інші простори для тимчасового накопичення води демонструють, що міський простір може виконувати більше ніж одну функцію.</p>
+          <h3 class="semantic-label">Управлінський урок</h3>
+          <p>Для нас тут важливий не конкретний дизайн площі, а управлінська ідея:</p>
+          <p>роботу з водою можна інтегрувати у ширше планування міського простору.</p>
+          <p>Це знову не готове рішення для копіювання.</p>
+          <p>Місцеві умови, причини ризику та можливі рішення потребують окремого опрацювання.</p>
+        </article>
+        <article class="evidence-card resource-card lx-resource">
+          <h2>Ресурс для подальшої роботи</h2>
+          <p>Climate-ADAPT: Urban Adaptation Support Tool — інструмент підтримки міської адаптації — допомагає містам послідовно працювати з оцінкою кліматичних ризиків та адаптаційним плануванням.</p>
+          <p>Його можна використати після заняття, якщо Вашій команді потрібно глибше перейти від визначення проблеми до системної адаптаційної роботи.</p>
+          <a class="button button-external resource-link" data-resource="RES01" href="https://climate-adapt.eea.europa.eu/en/metadata/tools/urban-adaptation-support-tool" target="_blank" rel="noopener noreferrer">Climate-ADAPT: відкрити інструмент ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="route" data-route="R06" data-component="L06-HF06" aria-labelledby="r06-title" hidden>
+      <h1 id="r06-title" tabindex="-1">Що це означає для української громади</h1>
+      <p>Міжнародні приклади в цьому занятті показують водосвідомі підходи в дії. Український контекст допомагає пов’язати водний ризик із плануванням, адаптацією та відновленням громади.</p>
+      <p>Для української громади першим кроком також не обов’язково має бути вибір готового технічного рішення.</p>
+      <p>Спочатку важливо:</p>
+      <ol class="lx-municipal-pathway">
+        <li>визначити, де саме виникає проблема;</li>
+        <li>чітко сформулювати водний ризик;</li>
+        <li>зібрати доступну інформацію;</li>
+        <li>зрозуміти, чого ще не знає команда;</li>
+        <li>визначити перший управлінський крок.</li>
+      </ol>
+      <h2>З чим можна пов’язати цю роботу</h2>
+      <div class="context-grid">
+        <article class="context-card lx-context lx-resource">
+          <h3>DREAM та DREAM Green Recovery — контекст відновлення і зеленої відбудови</h3>
+          <p>Може бути корисним контекстом для підготовки та опрацювання проєктів відновлення.</p>
+          <a class="button button-external resource-link" data-resource="RES03" href="https://dream.gov.ua/special/greenrestoration" target="_blank" rel="noopener noreferrer">DREAM: відкрити Green Recovery ↗</a>
+        </article>
+        <article class="context-card lx-context">
+          <h3>SECAP — План дій зі сталого енергетичного розвитку та клімату в межах Угоди мерів (Covenant of Mayors)</h3>
+          <p>Дає ширшу рамку для кліматичного та адаптаційного планування громади.</p>
+        </article>
+        <article class="context-card lx-context lx-resource">
+          <h3>Covenant of Mayors East — від заходів SECAP до інвестиційних проєктів</h3>
+          <p>Допомагає побачити зв’язок між плануванням заходів і подальшою підготовкою інвестиційних проєктів.</p>
+          <a class="button button-external resource-link" data-resource="RES04" href="https://com-east.eu/ukrainian-municipalities-learn-to-turn-climate-plans-into-investment-projects/" target="_blank" rel="noopener noreferrer">Covenant of Mayors East: відкрити матеріал ↗</a>
+        </article>
+        <article class="context-card lx-context">
+          <h3>Житомир: кліматичне планування та SECAP</h3>
+          <p>Може слугувати ширшим контекстом міського кліматичного планування.</p>
+        </article>
+      </div>
+      <aside class="callout lx-key-thought" aria-labelledby="r06-conclusion">
+            <h2 id="r06-conclusion"><span class="semantic-marker" aria-hidden="true">💡</span> Управлінський висновок</h2>
+        <p>Починати варто не з бажаної технології.</p>
+        <p>Починати варто з питання:</p>
+        <blockquote>«Який саме водний ризик нашої громади ми хочемо опрацювати?»</blockquote>
+      </aside>
+    </section>
+
+    <section class="route" data-route="R07" data-component="L06-HF07" aria-labelledby="r07-title" hidden>
+      <h1 id="r07-title" tabindex="-1">Який це водний ризик?</h1>
+      <p>Перед роботою зі своєю громадою потренуйтеся розрізняти три типи водного ризику.</p>
+      <p>Це тренувальне завдання.</p>
+      <p>Воно не оцінюється. Ви можете пробувати ще раз.</p>
+
+      <div class="interaction-panel lx-formative" id="r07-panel">
+        <p id="r07-counter" class="interaction-counter">Ситуація 1</p>
+        <p id="r07-situation" class="interaction-prompt"></p>
+        <fieldset id="r07-options" class="option-group" aria-describedby="r07-feedback">
+          <legend>Варіанти</legend>
+        </fieldset>
+        <div class="interaction-actions">
+          <button id="r07-check" class="button button-primary" type="button">Перевірити відповідь</button>
+          <button id="r07-retry" class="button button-secondary" type="button" hidden>Спробувати ще раз</button>
+          <button id="r07-continue" class="button button-primary" type="button" hidden>Продовжити</button>
+        </div>
+        <div id="r07-feedback" class="feedback" role="status" aria-live="polite"></div>
+      </div>
+      <div id="r07-transition" class="callout" hidden>
+        <h2>Перехід до своєї громади</h2>
+        <p>Тепер використайте цю логіку не для умовної ситуації, а для одного реального питання Вашої громади.</p>
+      </div>
+    </section>
+
+    <section class="route" data-route="R08" data-component="L06-HF08" aria-labelledby="r08-title" hidden>
+          <h1 id="r08-title" tabindex="-1"><span class="semantic-marker" aria-hidden="true">📂</span> Карта водного ризику або водного управлінського питання</h1>
+      <p>Тепер перейдіть від прикладів до своєї громади.</p>
+      <p>Оберіть одну ділянку або одну міську систему, про яку Ви вже маєте достатньо інформації, щоб описати проблему без технічних розрахунків і без вигадування невідомих фактів.</p>
+      <p>Не потрібно розробляти готове рішення.</p>
+      <p>Ваше завдання — зробити один водний ризик достатньо конкретним для подальшої управлінської роботи.</p>
+
+      <form id="portfolio-form" class="portfolio-form lx-portfolio" novalidate>
+        <p id="portfolio-step-progress" class="portfolio-step-progress" aria-live="polite">Заповнено кроків: 0 із 4</p>
+        <div class="form-field lx-portfolio-step">
+          <span class="portfolio-step-number">Крок 1</span>
+          <label for="areaSystem">Ділянка або міська система громади</label>
+          <p id="areaSystem-help">Назвіть конкретне місце або систему, де Ви бачите водне питання.</p>
+          <p>Приклад рівня конкретності: вулиця, житловий район, громадський простір або міська система.</p>
+          <textarea id="areaSystem" name="areaSystem" rows="5" aria-describedby="areaSystem-help"></textarea>
+        </div>
+        <div class="form-field lx-portfolio-step">
+          <span class="portfolio-step-number">Крок 2</span>
+          <label for="waterRiskIssue">Водний ризик або управлінське питання</label>
+          <p id="waterRiskIssue-help">Сформулюйте один ризик або одне питання, з яким потрібно працювати.</p>
+          <p>Не починайте з назви готового рішення.</p>
+          <textarea id="waterRiskIssue" name="waterRiskIssue" rows="5" aria-describedby="waterRiskIssue-help"></textarea>
+        </div>
+        <div class="form-field lx-portfolio-step">
+          <span class="portfolio-step-number">Крок 3</span>
+          <label for="riskManifestation">Як ризик проявляється / чому потребує управлінської уваги</label>
+          <p id="riskManifestation-help">Коротко опишіть, як проблема проявляється і що Вам про це відомо. Якщо причина не підтверджена, не подавайте її як факт.</p>
+          <textarea id="riskManifestation" name="riskManifestation" rows="6" aria-describedby="riskManifestation-help"></textarea>
+        </div>
+        <div class="form-field lx-portfolio-step">
+          <span class="portfolio-step-number">Крок 4</span>
+          <label for="firstManagementStep">Перший управлінський крок до водочутливого міста</label>
+          <p id="firstManagementStep-help">Запишіть одну першу дію, яку може ініціювати управлінська команда для уточнення або подальшого опрацювання питання.</p>
+          <p>Не проєктуйте технічне рішення.</p>
+          <textarea id="firstManagementStep" name="firstManagementStep" rows="6" aria-describedby="firstManagementStep-help"></textarea>
+        </div>
+
+        <aside class="review-card lx-review" aria-labelledby="review-title">
+          <h2 id="review-title">Перевірте свою карту</h2>
+          <p>Перед збереженням перевірте:</p>
+          <ul>
+            <li>чи назвали Ви конкретну ділянку або систему;</li>
+            <li>чи сформулювали один водний ризик або питання;</li>
+            <li>чи відокремили відомі факти від припущень;</li>
+            <li>чи Ваш останній пункт є управлінським кроком, а не готовим технічним рішенням.</li>
+          </ul>
+        </aside>
+
+        <div class="artifact-actions">
+          <h2>Збережіть результат</h2>
+          <button id="save-portfolio" class="button button-primary" type="submit">Зберегти карту</button>
+          <p id="portfolio-requirement">Карта готова до збереження, коли всі чотири поля заповнені відповідно до підказок вище.</p>
+          <p>Після цього Ви можете:</p>
+          <button id="download-pdf" class="button button-secondary" type="button" disabled>Завантажити PDF</button>
+          <p>PDF містить Вашу Карту водного ризику або водного управлінського питання для Портфеля мера.</p>
+          <p>Завантаження PDF не залежить від результату фінального тесту.</p>
+          <div id="portfolio-status" class="status-line" role="status" aria-live="polite"></div>
+        </div>
+
+        <section class="lx-ai-support" aria-labelledby="ai-support-title">
+            <h2 id="ai-support-title"><span class="semantic-marker" aria-hidden="true">🤖</span> AI-підтримка для Вашої карти</h2>
+          <div class="ai-action-list">
+            <article class="lx-ai-action">
+              <h3>Перевірити карту</h3>
+              <p>Перевірте, чи узгоджуються між собою водний ризик, його прояв і запропонований перший управлінський крок.</p>
+              <button class="button button-secondary ai-copy-button" type="button" data-ai-action="AI-L06-01" disabled aria-disabled="true">Копіювати промпт</button>
+              <p class="ai-insufficient">Заповніть усі чотири кроки карти, щоб підготувати цей промпт.</p>
+            </article>
+            <article class="lx-ai-action">
+              <h3>Знайти прогалини</h3>
+              <p>Знайдіть, якої інформації або уточнень ще бракує для сильнішого управлінського рішення.</p>
+              <button class="button button-secondary ai-copy-button" type="button" data-ai-action="AI-L06-02" disabled aria-disabled="true">Копіювати промпт</button>
+              <p class="ai-insufficient">Заповніть перші три кроки карти, щоб знайти прогалини.</p>
+            </article>
+            <article class="lx-ai-action">
+              <h3>Уточнити перший крок</h3>
+              <p>Отримайте практичні поради, як уточнити або посилити Ваш перший управлінський крок.</p>
+              <button class="button button-secondary ai-copy-button" type="button" data-ai-action="AI-L06-03" disabled aria-disabled="true">Копіювати промпт</button>
+              <p class="ai-insufficient">Заповніть усі чотири кроки карти, щоб уточнити перший управлінський крок.</p>
+            </article>
+          </div>
+          <div id="ai-copy-status" class="status-line" role="status" aria-live="polite"></div>
+          <div class="ai-service-actions">
+              <a class="button button-external" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Відкрити ChatGPT ↗</a>
+              <a class="button button-external" href="https://gemini.google.com/app" target="_blank" rel="noopener noreferrer">Відкрити Gemini ↗</a>
+          </div>
+          <p class="ai-privacy-note">Ваші дані залишаються у цьому браузері, доки Ви самі не скопіюєте їх або не вставите до зовнішнього сервісу. Не вводьте персональні чи конфіденційні дані. Перевіряйте відповіді AI: вони не замінюють відповідальне рішення та професійний розгляд команди громади.</p>
+        </section>
+      </form>
+    </section>
+
+    <section class="route" data-route="R09" data-component="L06-HF09" aria-labelledby="r09-title" hidden>
+          <h1 id="r09-title" tabindex="-1"><span class="semantic-marker" aria-hidden="true">📝</span> Перевірте своє розуміння</h1>
+      <p>Фінальна перевірка містить 5 запитань.</p>
+      <p>Для завершення заняття потрібно відповісти правильно на всі п’ять.</p>
+      <p>Якщо Ви помилилися, перегляньте пояснення та спробуйте ще раз.</p>
+
+      <div id="assessment-panel" class="interaction-panel assessment-panel lx-assessment">
+        <div id="assessment-list" class="assessment-list"></div>
+        <div class="interaction-actions">
+          <button id="assessment-check" class="button button-primary" type="button">Перевірити відповіді</button>
+          <button id="assessment-retry" class="button button-secondary" type="button" hidden>Спробувати ще раз</button>
+        </div>
+        <div id="assessment-summary" class="feedback assessment-summary" role="status" aria-live="polite" tabindex="-1"></div>
+      </div>
+      <div id="assessment-result" class="callout" hidden>
+        <h2>Результат тесту</h2>
+        <p>Для завершення заняття потрібно:</p>
+        <p class="strong-line">5 із 5 правильних відповідей.</p>
+        <p>Якщо результат нижчий, Ви можете повторити перевірку після пояснень.</p>
+      </div>
+    </section>
+
+    <section class="route" data-route="R10" data-component="L06-HF10" aria-labelledby="r10-title" hidden>
+          <h1 id="r10-title" tabindex="-1"><span class="semantic-marker" aria-hidden="true">✅</span> Що Ви берете із собою далі</h1>
+      <div class="completion-panel lx-completion">
+        <h2>Ви завершили заняття</h2>
+        <section class="completion-group" aria-labelledby="r10-done">
+        <h2 id="r10-done">Що Ви зробили</h2>
+        <p>Ви не створили водний проєкт — і це не було метою цього заняття.</p>
+        <p>Ви зробили попередній, але важливий управлінський крок.</p>
+        <p>Ви:</p>
+        <ul>
+          <li>визначили одну конкретну ділянку або міську систему;</li>
+          <li>сформулювали один водний ризик або питання;</li>
+          <li>пояснили, як проблема проявляється і чому потребує уваги;</li>
+          <li>визначили перший управлінський крок.</li>
+        </ul>
+        <p>Це дає Вашій команді чіткішу точку для подальшої роботи.</p>
+        </section>
+        <section class="completion-group" aria-labelledby="r10-portfolio">
+        <h2 id="r10-portfolio">Портфель мера</h2>
+        <p>Ваша Карта водного ризику або водного управлінського питання є частиною Портфеля мера.</p>
+        <p>Збережіть її.</p>
+        <p>До неї можна буде повернутися під час подальшої роботи з міською стійкістю.</p>
+        </section>
+        <aside class="callout" aria-labelledby="r10-key">
+          <h2 id="r10-key">Ключовий висновок</h2>
+          <p>Не починайте водну трансформацію з готової споруди. Починайте з чітко визначеного ризику та обґрунтованого першого управлінського кроку.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Навігація між сторінками">
+    <div class="bottom-nav-inner">
+      <button id="nav-back" class="button button-secondary" type="button" disabled>Назад</button>
+      <span id="nav-page" class="nav-page">Сторінка 1 з 10</span>
+      <a id="nav-next" class="button button-primary" href="#">Далі</a>
+    </div>
+  </nav>
+
+  <script src="js/vendor/pdfmake.min.js"></script>
+  <script src="js/vendor/vfs_fonts.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
